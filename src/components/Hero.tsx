@@ -65,7 +65,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center justify-center gap-4">
             <Link
-              href="https://tally.so/r/your-form-id"
+              href="https://tally.so/r/w4EVQA"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-lg bg-indigo-600 hover:bg-indigo-500 px-6 py-3 font-medium text-white transition"

@@ -13,7 +13,7 @@ const faqData = [
   {
     question: "How is Venta different from card terminals or POS systems?",
     answer:
-      "Traditional systems charge up to 3% and offer limited tools. Venta charges less than 1% and gives you built-in loyalty, rewards, and referral mechanics aligned with your growth.",
+      "Traditional payment systems charge up to 3% with limited features. Venta starts at just 0.7% base fee, with optional extensions for additional capabilities. This means you get a modern, feature-rich platform at a fraction of traditional costs, with built-in loyalty, rewards, and referral mechanics that grow with your business.",
   },
   {
     question: "Do I need to understand crypto to use Venta?",

@@ -1,4 +1,3 @@
-
 export default function Navbar() {
   return (
     <nav className="w-full px-6 py-4 flex justify-between items-center bg-transparent fixed top-0 z-50 backdrop-blur-md">

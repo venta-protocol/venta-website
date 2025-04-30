@@ -10,13 +10,12 @@ import {
 const features = [
   {
     title: "Lower Fees",
-    description:
-      "Ditch the 2–3% credit card tax. Pay less than 0.3% with Solana.",
+    description: "Ditch the 2–3% credit card tax. Pay 0.7% with Solana.",
     icon: CurrencyDollarIcon,
   },
   {
     title: "Instant Settlement",
-    description: "Funds land in your wallet in seconds — not days.",
+    description: "Funds land in your wallet in 1–2 seconds, not days.",
     icon: BoltIcon,
   },
   {
@@ -32,7 +31,8 @@ const features = [
   },
   {
     title: "Global Ready",
-    description: "Tap into borderless stablecoins like USDC. No bank barriers.",
+    description:
+      "Tap into borderless stablecoins like USDG, USDC, and USDT. No bank barriers.",
     icon: GlobeAltIcon,
   },
   {

@@ -16,13 +16,13 @@ export default function Footer() {
           <h4 className="text-white font-medium mb-2">Explore</h4>
           <ul className="space-y-1">
             <li>
-              <Link href="/#features" className="hover:text-white">
-                Features
+              <Link href="/#growth" className="hover:text-white">
+                Growth
               </Link>
             </li>
             <li>
-              <Link href="/#calculator" className="hover:text-white">
-                Savings Calculator
+              <Link href="/#savings" className="hover:text-white">
+                Savings
               </Link>
             </li>
             <li>
@@ -37,26 +37,17 @@ export default function Footer() {
           <h4 className="text-white font-medium mb-2">Connect</h4>
           <ul className="space-y-1">
             <li>
-              <a href="mailto:team@venta.xyz" className="hover:text-white">
+              <a href="mailto:contact@venta.xyz" className="hover:text-white">
                 Email Us
               </a>
             </li>
             <li>
               <a
-                href="https://x.com/ventapay"
+                href="https://x.com/venta_xyz"
                 target="_blank"
                 className="hover:text-white"
               >
                 Twitter/X
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://t.me/ventapay"
-                target="_blank"
-                className="hover:text-white"
-              >
-                Telegram
               </a>
             </li>
           </ul>
