@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Calculator from "@/components/Savings/Calculator";
-import FeatureSection from "@/components/Features/FeatureSection";
+import Calculator from "@/components/Earn/Calculator";
 import Footer from "@/components/Footer";
 import CompanyLogo from "@/components/CompanyLogo";
 import GrowWithVenta from "@/components/Growth/GrowWithVenta";
@@ -14,7 +13,6 @@ export default function Home() {
       <CompanyLogo />
       <GrowWithVenta />
       <Calculator />
-      <FeatureSection />
       <FaqSection />
       <Footer />
     </main>

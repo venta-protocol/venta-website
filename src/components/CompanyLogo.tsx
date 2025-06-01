@@ -52,9 +52,9 @@ const logos = [
     alt: "Decaf",
   },
   {
-    href: "https://www.monstre.net/",
-    src: "/images/logos/monstre.png",
-    alt: "Monstre",
+    href: "https://globaldollar.com/",
+    src: "/images/logos/gdn.svg",
+    alt: "Global Dollar Network",
   },
   {
     href: "https://solana.com/playgg",
@@ -65,9 +65,10 @@ const logos = [
 
 export default function CompanyLogo() {
   return (
-    <section className="bg-[#0f172a] text-white py-16 px-6">
+    <section className="relative py-16 px-6">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1b1034] to-[#0f172a] -z-10" />
       <div className="container mx-auto text-center">
-        <h3 className="text-xl font-semibold mb-6 text-slate-300">
+        <h3 className="text-3xl font-semibold mb-12 text-slate-300">
           Trusted by industry leaders and innovators
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center">
@@ -77,7 +78,11 @@ export default function CompanyLogo() {
               href={logo.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative h-10 grayscale opacity-80 hover:opacity-100 transition"
+              className={
+                logo.alt === "Global Dollar Network"
+                  ? "relative h-10 grayscale opacity-30 hover:opacity-70 transition"
+                  : "relative h-10 grayscale opacity-40 hover:opacity-100 transition"
+              }
             >
               <Image
                 src={logo.src}

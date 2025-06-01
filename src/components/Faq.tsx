@@ -8,27 +8,27 @@ const faqData = [
   {
     question: "What is Venta?",
     answer:
-      "Venta is a next-gen payments and rewards platform built on Solana. We help merchants reduce payment fees, increase retention, and unlock new revenue streams — all without monthly subscriptions.",
+      "Venta is a stablecoin payment and rewards API for POS systems. It lets you offer fast, low-fee stablecoin payments to your merchants — with built-in revenue sharing, rewards, and campaign tools.",
   },
   {
-    question: "How is Venta different from card terminals or POS systems?",
+    question: "How does Venta make money?",
     answer:
-      "Traditional payment systems charge up to 3% with limited features. Venta starts at just 0.7% base fee, with optional extensions for additional capabilities. This means you get a modern, feature-rich platform at a fraction of traditional costs, with built-in loyalty, rewards, and referral mechanics that grow with your business.",
+      "Venta charges a base fee of 0.7% per transaction. As a POS partner, you can add your own markup (e.g. 0.3%), which goes directly to you. No subscriptions or setup fees.",
   },
   {
-    question: "Do I need to understand crypto to use Venta?",
+    question: "How do I integrate Venta into my POS system?",
     answer:
-      "Not at all. Venta works behind the scenes. Customers can pay with stablecoins like USDC using a phone — no wallet setup required.",
+      "We provide a simple REST and WebSocket-based API. You can embed our payment flow, access real-time updates, and optionally white-label the QR experience — all with full developer support.",
   },
   {
-    question: "Is there a monthly subscription or hidden fees?",
+    question: "Does Venta require crypto knowledge?",
     answer:
-      "No subscriptions. No surprises. You only pay a small percentage when you actually make a sale. We grow when you grow.",
+      "Not at all. We abstract the Web3 components. Merchants log in with social auth, and funds go directly to their wallet — no seed phrases, no technical setup.",
   },
   {
-    question: "Can I keep using my existing POS or terminal?",
+    question: "Is this compatible with our existing POS features?",
     answer:
-      "Yes. Venta can work alongside your current setup, or replace it entirely — it's up to you.",
+      "Yes. Venta can run alongside your current setup or be embedded directly. It works as a lightweight add-on that enhances your offering without disrupting your flow.",
   },
 ];
 
@@ -36,29 +36,31 @@ export default function FaqSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   return (
-    <section
-      className="bg-gradient-to-r from-slate-900 to-[#1b0e2d] py-20 px-6"
-      id="faq"
-    >
+    <section className="relative py-20 px-6" id="faq">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1e1b4b] via-[#1e1b4b] to-[#0f172a] -z-10" />
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         <div>
           <h2 className="text-white text-3xl font-bold mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-slate-300 text-lg max-w-md">
-            Everything you need to know about how Venta helps you save and grow.
+          <p className="text-slate-200 text-lg max-w-md">
+            Everything you need to know about integrating Venta and unlocking
+            new revenue streams.
           </p>
         </div>
 
         <div className="space-y-4">
           {faqData.map((faq, i) => (
-            <div key={i} className="border border-slate-800 rounded-md">
+            <div
+              key={i}
+              className="border border-slate-700/50 rounded-md bg-slate-800/40 backdrop-blur"
+            >
               <button
                 onClick={() => setActiveIndex(i === activeIndex ? null : i)}
                 className="w-full px-5 py-4 text-left text-white flex justify-between items-center"
               >
                 <span className="font-medium text-base">{faq.question}</span>
-                <span className="text-indigo-400">
+                <span className="text-indigo-200">
                   {activeIndex === i ? "▲" : "▼"}
                 </span>
               </button>
@@ -69,7 +71,7 @@ export default function FaqSection() {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="px-5 pb-4 text-slate-400"
+                    className="px-5 pb-4 text-slate-300"
                   >
                     {faq.answer}
                   </motion.div>
