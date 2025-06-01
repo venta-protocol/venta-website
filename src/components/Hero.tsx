@@ -75,7 +75,7 @@ export default function Hero() {
             </Link>
 
             <a
-              href="https://api.venta.xyz/docs"
+              href="https://venta.gitbook.io/venta"
               className="inline-block rounded-lg border border-white/20 px-6 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               View Documentation
