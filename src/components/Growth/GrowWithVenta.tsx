@@ -37,7 +37,7 @@ export default function GrowWithVenta() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-slate-800/40 rounded-lg p-6 shadow hover:shadow-lg transition backdrop-blur border border-slate-700/50"
+              className="bg-slate-800/40 rounded-lg p-6 shadow hover:shadow-lg transition backdrop-blur border border-slate-500/70"
             >
               <h3 className="text-xl font-semibold mb-2 text-white">
                 {feature.title}
