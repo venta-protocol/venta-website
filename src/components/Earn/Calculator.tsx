@@ -20,7 +20,7 @@ export default function Calculator() {
         </h2>
         <p className="text-lg mb-10 text-slate-200">
           Use the sliders to estimate how much you can earn by adding a small
-          fee on top of Venta&apos;s base rate.
+          fee on top
         </p>
 
         {/* Volume Slider */}
@@ -82,7 +82,9 @@ export default function Calculator() {
 
           <UpsideCard
             label="Your Annual Revenue"
-            desc={`≈ $${Math.round(partnerRevenueMonthly)} / mo`}
+            desc={`≈ $${Math.round(
+              partnerRevenueMonthly
+            ).toLocaleString()} / mo`}
             value={partnerRevenueAnnual}
             highlight
           />

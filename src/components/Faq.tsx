@@ -10,11 +10,11 @@ const faqData = [
     answer:
       "Venta is a stablecoin payment and rewards API for POS systems. It lets you offer fast, low-fee stablecoin payments to your merchants — with built-in revenue sharing, rewards, and campaign tools.",
   },
-  {
-    question: "How does Venta make money?",
-    answer:
-      "Venta charges a base fee of 0.7% per transaction. As a POS partner, you can add your own markup (e.g. 0.3%), which goes directly to you. No subscriptions or setup fees.",
-  },
+  // {
+  //   question: "How does Venta make money?",
+  //   answer:
+  //     "Venta charges a base fee of 0.7% per transaction. As a POS partner, you can add your own markup (e.g. 0.3%), which goes directly to you. No subscriptions or setup fees.",
+  // },
   {
     question: "How do I integrate Venta into my POS system?",
     answer:

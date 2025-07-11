@@ -60,9 +60,11 @@ export default function Hero() {
 
           <p className="text-lg mt-6 max-w-2xl text-slate-300">
             Accept stablecoins with low fees, instant settlement, and no new
-            hardware. Venta charges a base fee of 0.7% — and you can add your
-            own markup (e.g. 0.3%) that goes straight to you. It&apos;s a new,
-            recurring revenue stream baked right into your POS.
+            hardware.
+            <br />
+            You can add your own markup (e.g. 0.3%) that goes straight to you.
+            <br />
+            It&apos;s a new, recurring revenue stream baked right into your POS.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row sm:items-center justify-center gap-4">
             <Link
